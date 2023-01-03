@@ -3,5 +3,5 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 
 class AnalyzeForm(FlaskForm):
-    data = StringField('Data', validators=[DataRequired()])
+    url = StringField('URL', validators=[DataRequired()])
     submit = SubmitField('Analyze')
