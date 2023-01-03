@@ -1,0 +1,15 @@
+{% extends "looks.html" %}
+
+{% block form %}
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.data.label }}<br>
+            {{ form.data(size=32) }}<br>
+            {% for error in form.data.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}
