@@ -1,7 +1,7 @@
 from flask import render_template, flash, redirect, url_for, request
 from app import app
 from app.forms import AnalyzeForm
-from scrape import read_time
+from helper.scrape import read_time
 
 @app.route('/', methods=['GET', 'POST'])
 def root():
