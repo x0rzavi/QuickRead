@@ -20,7 +20,7 @@ def read_time(url: str, wpm: int) -> str:
 
     read_time_min = num_words / wpm
     read_time_sec = ( read_time_min % 1 ) * 60
-    read_time = str(int(read_time_min)) + " minutes & " + str(int(read_time_sec)) + " seconds."
+    read_time = str(int(read_time_min)) + " minutes & " + str(int(read_time_sec)) + " seconds"
     return read_time
     #return text
 
