@@ -19,6 +19,6 @@ def home():
         return render_template('form.html', form=form, data=time)
     return render_template('form.html', form=form)
 
-@app.route("/health")
+@app.route("/health", methods=['GET'])
 def health():
-    return "Success", 200
+    return "Healthy", 200
