@@ -1,5 +1,7 @@
 flask
+flask-wtf
 beautifulsoup4
 lxml
 bootstrap-flask
+requests
 gunicorn
