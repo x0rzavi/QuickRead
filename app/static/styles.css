@@ -12,8 +12,8 @@ body {
     font-style: italic;
     font-weight: bolder;
     text-align: center;
-    font-size: 4.5em;
-    padding: 1.5em 1em 0em;
+    font-size: 3.5em;
+    padding: 1.5em 0em 0.5em;
     color: rgb(250, 179, 135);
 }
 
@@ -22,10 +22,12 @@ body {
     font-size: 1.5em;
     font-weight: 100;
     padding-bottom: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 
 #analysis {
-    padding: 1.5em 1em 1.5em;
+    padding: 1.5em 1.5em 1.5em;
     font-size: 1.5em;
     font-style: italic;
     text-align: center;
@@ -58,7 +60,7 @@ nav {
 }
 
 form {
-    padding: 2.5em 3em 1em;
+    padding: 2.5em 3em 2.5em;
 }
 
 #submit {
