@@ -1,14 +1,14 @@
-{% extends "looks.html" %}
+{% extends "base.html" %}
+{% from 'bootstrap5/form.html' import render_form %}
+<!-- {% from 'bootstrap5/form.html' import render_field %} -->
 
 {% block form %}
-    <form action="" method="post" novalidate>
-        {{ form.hidden_tag() }}
-        <p>
-            {{ form.url(size=32) }}
-            {% for error in form.url.errors %}
-            <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
-        </p>
-        <p>{{ form.submit() }}</p>
+    <form method="post" novalidate>
+        <!-- {{ form.csrf_token }}
+        <div class="row g-3">
+            <div class="col">{{ render_field(form.url) }}</div>
+            <div class="col">{{ render_field(form.submit) }}</div> -->
+            {{ render_form(form) }}
+        </div>
     </form>
 {% endblock %}

@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
-from wtforms.validators import DataRequired
+from wtforms.validators import DataRequired, InputRequired
 
 class AnalyzeForm(FlaskForm):
-    url = StringField('URL', validators=[DataRequired()])
-    submit = SubmitField('Analyze')
+    url = StringField('Enter article link to analyze:', validators=[InputRequired()])
+    submit = SubmitField('GodSpeed!')

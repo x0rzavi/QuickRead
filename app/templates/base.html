@@ -1,10 +1,40 @@
 <!-- Base > Looks > Form -->
 
-<html>
+<!doctype html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>QuickRead</title>
+        
+        {{ bootstrap.load_css() }}
+        <link rel="stylesheet" href="/static/styles.css">
+        <link rel="stylesheet" href="/static/iosevka/iosevka.css">
     </head>
     <body>
-        {% block looks %}{% endblock %}
+        <h1 id="app_name"> QuickRead☰ </h1>
+        <p id="app_desc">
+            <u id="underline"><b id="bold">Procrastinating</b></u> reading an article? Not anymore!<br>
+            <u id="underline"><b id="bold">Anticipate</b></u> how long it might take to read, <u id="underline"><b id="bold">right now</b></u>!
+        </p>
+
+        {% block form %}{% endblock %}
+
+        {% if data != 'error' %}
+        <p id="analysis">It might approximately take <u id="underline"><b id="bold">{{ data }}</b></u> to read the article</p>
+        {% else %}
+        <p id="analysis_error">Oops! some error might have crept in.<br>Please re-check article link.</p>
+        {% endif %}
+
+        <!-- <p>{{ tips }}</p> -->
+
+        <nav class="navbar fixed-bottom">
+            <div class="mx-auto">
+                Made with ❤ by <a href="https://github.com/x0rzavi"> Avishek Sen</a>.
+                Fork me on <a href="https://github.com/x0rzavi/QuickRead">GitHub</a>.
+            </div>
+        </nav>
+
+        {{ bootstrap.load_js() }}
     </body>
 </html>

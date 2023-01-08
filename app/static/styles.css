@@ -1,0 +1,81 @@
+* {
+    font-family: 'Iosevka Web';
+}
+
+body {
+    background-color: rgb(17, 17, 27);
+    color: rgb(205, 214, 244);
+}
+
+#app_name, #app_desc {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: 4.5em;
+    padding: 1.5em 1em 0em;
+    color: rgb(250, 179, 135);
+}
+
+#app_desc {
+    color: rgb(205, 214, 244);
+    font-size: 1.5em;
+    font-weight: 100;
+    padding-bottom: 1.5em;
+}
+
+#analysis {
+    padding: 1.5em 1em 1.5em;
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    color: rgb(205, 214, 244);
+}
+
+#analysis_error {
+    color: rgb(243, 139, 168);
+    padding: 1.5em;
+    font-size: 1.5em;
+    /* font-style: italic; */
+    text-align: center;
+}
+
+#underline {
+    color: rgb(137, 220, 235);
+}
+
+#bold {
+    color: rgb(250, 179, 135);
+}
+
+nav {
+    background-color: rgb(30, 30, 46);
+    color: rgb(186, 194, 222);
+}
+
+form {
+    padding: 2.5em 1.5em 1em;
+}
+
+#submit {
+    font-style: italic;
+    color: rgb(49, 50, 68);
+    --bs-btn-bg: rgb(116, 199, 236);
+    --bs-btn-hover-bg: rgb(137, 180, 250);
+    /* padding-left: 1em; */
+}
+
+.form-label {
+    /* display: none; */
+    font-weight: bold;
+    color: rgb(186, 194, 222);
+}
+
+.btn-primary, .form-control {
+    border-radius: 0%;
+    font-weight: 1000;
+    padding-left: 1em;
+    padding-right: 1em;
+    /* --bs-btn-bg: rgb(64, 64, 64);
+    --bs-btn-border-color: rgb(102, 102, 102);
+    --bs-btn-hover-bg: rgb(39, 124, 221); */
+}
