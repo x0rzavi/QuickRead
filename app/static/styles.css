@@ -87,3 +87,7 @@ form {
     --bs-btn-border-color: rgb(102, 102, 102);
     --bs-btn-hover-bg: rgb(39, 124, 221); */
 }
+
+.form-control {
+    font-size: small;
+}
