@@ -34,7 +34,7 @@ jobs:
           file: Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           build-args: |
-            SECRET_KEY: ${{ secrets.CSRF_SECRET }}
+            SECRET_KEY=${{ secrets.CSRF_SECRET }}
           push: true
           tags: x0rzavi/quickread:latest
           cache-from: type=registry,ref=x0rzavi/quickread:buildcache
