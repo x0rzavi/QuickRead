@@ -21,9 +21,13 @@
         {% block form %}{% endblock %}
 
         {% if data != 'error' %}
-        <p id="analysis">It might approximately take <u id="underline"><b id="bold">{{ data }}</b></u> to read the article</p>
+            {% if data is not defined %}
+            <p></p>
+            {% else %}
+            <p id="analysis">It might approximately take <u id="underline"><b id="bold">{{ data }}</b></u> to read the article</p>
+            {% endif %}
         {% else %}
-        <p id="analysis_error">Oops! some error might have crept in.<br>Please re-check article link.</p>
+        <p id="analysis_error">Oops! some <u id="underline"><b id="bold">error</b></u> might have crept in.<br>Please re-check the article link.</p>
         {% endif %}
 
         <!-- <p>{{ tips }}</p> -->
