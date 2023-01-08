@@ -8,7 +8,7 @@ from helper.scrape import read_time
 def home():
     form = AnalyzeForm()
     # tip = get_tips()
-    wpm = 230
+    wpm = 220
     if form.validate_on_submit():
         try:
             url = request.form.get("url")

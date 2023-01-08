@@ -1,5 +1,5 @@
 * {
-    font-family: 'Iosevka Web';
+    font-family: 'Iosevka Web', monospace;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
 
 #app_name, #app_desc {
     font-style: italic;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     font-size: 4.5em;
     padding: 1.5em 1em 0em;
@@ -35,7 +35,7 @@ body {
     color: rgb(243, 139, 168);
     padding: 1.5em;
     font-size: 1.5em;
-    /* font-style: italic; */
+    font-style: italic;
     text-align: center;
 }
 
@@ -47,13 +47,17 @@ body {
     color: rgb(250, 179, 135);
 }
 
+#link {
+    color: rgb(116, 199, 236);
+}
+
 nav {
     background-color: rgb(30, 30, 46);
     color: rgb(186, 194, 222);
 }
 
 form {
-    padding: 2.5em 1.5em 1em;
+    padding: 2.5em 3em 1em;
 }
 
 #submit {
@@ -72,7 +76,7 @@ form {
 
 .btn-primary, .form-control {
     border-radius: 0%;
-    font-weight: 1000;
+    font-weight: bolder;
     padding-left: 1em;
     padding-right: 1em;
     /* --bs-btn-bg: rgb(64, 64, 64);

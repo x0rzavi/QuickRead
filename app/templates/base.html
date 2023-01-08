@@ -24,7 +24,7 @@
             {% if data is not defined %}
             <p></p>
             {% else %}
-            <p id="analysis">It might approximately take <u id="underline"><b id="bold">{{ data }}</b></u> to read the article</p>
+            <p id="analysis"> <u id="underline"><b id="bold">Approximately</b></u> it might take an average adult <u id="underline"><b id="bold">{{ data }}</b></u> to read the article</p>
             {% endif %}
         {% else %}
         <p id="analysis_error">Oops! some <u id="underline"><b id="bold">error</b></u> might have crept in.<br>Please re-check the article link.</p>
@@ -34,8 +34,8 @@
 
         <nav class="navbar fixed-bottom">
             <div class="mx-auto">
-                Made with ❤ by <a href="https://github.com/x0rzavi"> Avishek Sen</a>.
-                Fork me on <a href="https://github.com/x0rzavi/QuickRead">GitHub</a>.
+                Made with ❤ by <a id=link href="https://github.com/x0rzavi"> Avishek Sen</a>.
+                Fork me on <a id=link href="https://github.com/x0rzavi/QuickRead">GitHub</a>.
             </div>
         </nav>
 
